@@ -1,0 +1,66 @@
+body {
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Style pour les images */
+img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    background-color: rgb(67, 134, 206) ;
+}
+
+nav .logo {
+    justify-content: left;
+}
+
+nav .logo img {
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: #333;
+}
+.navbar li {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.contactForm {
+    justify-content: center;
+    height: 100%;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Style pour les formulaires */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

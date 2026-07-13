@@ -1,0 +1,159 @@
+/* Body gris */
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header blanc, logo à gauche, liens à droite */
+header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 70px;
+}
+.navbar-logo img {
+    height: 48px;
+    width: auto;
+    display: block;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li {
+    display: inline-block;
+}
+.navbar-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+.navbar-links a:hover {
+    color: #0078d7;
+}
+
+/* Formulaire */
+section form {
+    background: #fff;
+    padding: 18px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    max-width: 900px;
+    margin: 0 auto 24px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+section label {
+    font-weight: bold;
+}
+section input, section select, section button {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+section button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+section button:hover {
+    background: #005fa3;
+}
+
+/* Blocs horaires */
+#horairesContainer {
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+}
+.horaire-bloc {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    margin-bottom: 32px;
+    padding: 24px 24px 12px 24px;
+}
+.horaire-bloc h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #0078d7;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+/* Carte vol */
+.vol-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.vol-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 32px;
+    font-size: 1em;
+}
+.btn-selectionner {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-selectionner:hover {
+    background: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+    }
+    .navbar-logo img {
+        height: 36px;
+    }
+    .horaire-bloc {
+        padding: 12px 6px 6px 6px;
+    }
+    .vol-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 8px;
+    }
+    section form {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 8px;
+    }
+}
