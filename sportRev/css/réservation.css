@@ -1,0 +1,105 @@
+body{
+ margin: 0;
+ padding: 0;
+ font-family: arial, sans-serif;   
+
+}
+
+header{
+    background:#0d6efd;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.reservation-form{
+    width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0, 15);
+}
+
+.reservation-form h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.reservation-form label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.reservation-form input,
+.reservation-form select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.reservation-form button:hover{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: green;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reservation-form button:hover{
+    background: darkgreen;
+}
+
+
+button {
+    background: blanchedalmond;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.btn-login{
+    background: white;
+    color: green !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-login:hover{
+    background: #f0f0f0;
+}
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 0;
+}
